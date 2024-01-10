@@ -98,6 +98,11 @@ const noteFrequencies = (notes = {
 
 const ragas = [
   {
+    name: 'pick a raga',
+    aaroh: '',
+    avaroh: '',
+  },
+  {
     name: 'Shankarabharanam',
     aaroh: "Sa Re Ga Ma Pa Dha Ni Sa'",
     avaroh: "Sa' Ni Dha Pa Ma Ga Re Sa",
