@@ -103,6 +103,11 @@ const ragas = [
     avaroh: '',
   },
   {
+    name: 'Mohanam',
+    aaroh: "Sa Re Ga Pa Dha Sa'",
+    avaroh: "Sa' Dha Pa Ga Re Sa",
+  },
+  {
     name: 'Shankarabharanam',
     aaroh: "Sa Re Ga Ma Pa Dha Ni Sa'",
     avaroh: "Sa' Ni Dha Pa Ma Ga Re Sa",
@@ -146,11 +151,6 @@ const ragas = [
     name: 'Bilahari',
     aaroh: "Sa Re Ga Pa Dha Sa'",
     avaroh: "Sa' Ni Dha Pa Ga Re Sa",
-  },
-  {
-    name: 'Mohanam',
-    aaroh: "Sa Re Ga Pa Dha Sa'",
-    avaroh: "Sa' Dha Pa Ga Re Sa",
   },
 ];
 
