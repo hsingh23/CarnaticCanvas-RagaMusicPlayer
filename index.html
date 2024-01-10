@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raga Player Instructions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        h1,
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to Raga Player</h1>
+        <p><strong>Raga Player</strong> is an interactive web tool that lets you experience the beauty of musical notes
+            from the comfort of your browser. Whether you're a music enthusiast, a student of Indian classical music, or
+            just curious about ragas, this tool offers a simple way to explore musical notes.</p>
+
+        <h1>Select a Raga</h1>
+        <select id="ragaSelector" onchange="populateRaga()">
+            <!-- Options will be populated by JavaScript -->
+        </select>
+        <br><br>
+        <textarea id="noteInput" rows="4" cols="50" placeholder="Enter notes here..."></textarea><br>
+        <button onclick="playNotes()">Play</button>
+
+        <h2>How to Use:</h2>
+        <ol>
+            <li>
+                <strong>Enter Notes:</strong>
+                <ul>
+                    <li>In the provided text area, type in the notes you wish to play.</li>
+                    <li>Use Western notation (like C, D#, F) or Indian classical notation (like Sa, Re, Ga).</li>
+                    <li>Each note should be separated by a space.</li>
+                    <li>For a pause, use a comma (`,`). Each comma represents a quarter-second pause.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Play the Composition:</strong>
+                <ul>
+                    <li>Once you've entered the notes, click the <strong>Play</strong> button.</li>
+                    <li>The tool will play each note for 1 second.</li>
+                    <li>Pauses (commas) in your sequence will be observed as brief silences.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Experiment and Enjoy:</strong>
+                <ul>
+                    <li>Feel free to experiment with different combinations of notes and rhythms.</li>
+                    <li>Discover the unique sounds of various ragas or create your own melodies.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>Examples:</h2>
+        <ul>
+            <li>To play a simple scale: Enter <code>C D E F G A B C'</code></li>
+            <li>For a Raga sequence with pauses: Enter <code>Sa Re Ga, Ma Pa Dha, Ni Sa'</code></li>
+        </ul>
+
+        <h2>Technical Notes:</h2>
+        <p>The website uses the Web Audio API to generate tones, so please ensure your browser supports it for the best
+            experience.</p>
+        <p>This tool is designed for educational and recreational purposes and is a simplified representation of the
+            rich and complex world of ragas.</p>
+
+        <p>Enjoy exploring the world of music with <strong>Raga Player</strong>!</p>
+    </div>
+    <script src="ragaPlayer.js"></script>
+
+</body>
+
+</html>
